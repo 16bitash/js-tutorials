@@ -5,7 +5,7 @@ function logger() {
 let intervalId;
 
 function cancelInterval() {
-    clearInterval(timerId);
+    clearInterval(intervalId);
 
     console.log('Interval has been canceled');
 }
@@ -13,5 +13,5 @@ function cancelInterval() {
 function startInterval() {
     console.log('Interval has been started');
 
-    timerId = setInterval(logger, 5000);
+    intervalId = setInterval(logger, 5000);
 }
